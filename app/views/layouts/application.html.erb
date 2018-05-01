@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Google Contacts" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Google Contacts" %></title>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+   <section>
+     <%= render 'layouts/messages' %>
+     <div class="container">
+       <%= yield %>
+     </div>
+   </section>
+  </body>
+</html>

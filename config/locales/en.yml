@@ -1,0 +1,3 @@
+en:
+  errors:
+    access_not_granted: "You need to authorize access to your Gmail account."

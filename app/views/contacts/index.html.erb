@@ -1,0 +1,30 @@
+<div class="my-4">
+  <%= link_to 'Pull contacts', pull_contacts_path, class: 'btn btn-outline-primary',
+    data: { 'js-spinner': true }, method: :post, remote: true %>
+</div>
+
+<div class="mx-auto my-4 loader"></div>
+
+<% if @contacts && @contacts.count > 0 %>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.phone %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<%= will_paginate @contacts, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+<% end %>

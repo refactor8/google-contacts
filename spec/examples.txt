@@ -1,0 +1,14 @@
+example_id                                              | status  | run_time        |
+------------------------------------------------------- | ------- | --------------- |
+./spec/controllers/contacts_controller_spec.rb[1:1:1:1] | passed  | 0.02778 seconds |
+./spec/controllers/contacts_controller_spec.rb[1:1:2]   | passed  | 0.02485 seconds |
+./spec/controllers/contacts_controller_spec.rb[1:2]     | passed  | 0.01067 seconds |
+./spec/features/users_authentication_spec.rb[1:1]       | passed  | 0.26393 seconds |
+./spec/features/users_authentication_spec.rb[1:2]       | passed  | 0.05968 seconds |
+./spec/helpers/contacts_helper_spec.rb[1:1]             | pending | 0.00003 seconds |
+./spec/models/user_spec.rb[1:1]                         | passed  | 0.02427 seconds |
+./spec/models/user_spec.rb[1:2]                         | passed  | 0.00204 seconds |
+./spec/models/user_spec.rb[1:3]                         | passed  | 0.00321 seconds |
+./spec/requests/omniauth_callbacks_spec.rb[1:1:1]       | passed  | 0.01738 seconds |
+./spec/requests/omniauth_callbacks_spec.rb[1:1:2]       | passed  | 0.13207 seconds |
+./spec/views/contacts/index.html.erb_spec.rb[1:1]       | pending | 0.00001 seconds |
